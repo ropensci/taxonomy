@@ -1,14 +1,7 @@
-CRAN Task View: Taxonomy
-------------------------
+Taxonomy
+--------
 
 | | |n|---|---|
-|-----------------|--------------------------------------------|
-| **Maintainer:** | Scott Chamberlain                          |
-| **Contact:**    | scott at ropensci.org                      |
-| **Version:**    | 2017-10-05                                 |
-| **URL:**        | <https://CRAN.R-project.org/view=Taxonomy> |
-
-This article is about taxonomy in R.
 
 If you have any comments or suggestions for additions or improvements for this article [submit an issue](https://github.com/ropensci/webservices/issues), or make some changes and [submit a pull request](https://github.com/ropensci/taxonomy/pulls). If you have an issue with one of the packages discussed below, please contact the maintainer of that package.
 

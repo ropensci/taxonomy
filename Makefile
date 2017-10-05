@@ -5,7 +5,7 @@ Taxonomy.ctv: taxonomy.md buildxml.R
 	R -e 'source("buildxml.R")'
 
 Taxonomy.html: Taxonomy.ctv
-	R -e 'if(!require("ctv")) install.packages("ctv", repos = "http://cran.rstudio.com/"); ctv::ctv2html("Taxonomy.ctv")'
+	R -e 'if(!require("ctv")) install.packages("ctv", repos = "http://cran.rstudio.com/"); ctv::ctv2html("Taxonomy.ctv"); source("process.R")'
 
 README.md: Taxonomy.html
 	pandoc -w markdown_github -o README.md Taxonomy.html
