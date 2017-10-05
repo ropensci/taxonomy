@@ -23,7 +23,7 @@ c(paste0('<CRANTaskView>
   paste0('    <pkg>', unlist(unname(pkgs)), '</pkg>', collapse = "\n"),
   '  </packagelist>',
   '  <links>',
-  '    <a href="https://github.com/ropensci/opendata">Open Data TaskView</a>',
+  '    <a href="https://cran.rstudio.com/web/views/Phylogenetics.html">Phylogenetics Task View</a>',
   '  </links>',
   '</CRANTaskView>')
 

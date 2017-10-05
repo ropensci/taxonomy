@@ -18,13 +18,31 @@ Taxonomic Classes
 - xxxxx <pkg>taxa</pkg>
 
 
-Parsing Taxonomic Names
------------------------
+Manipulating/Parsing Taxonomic Names
+------------------------------------
 
 - xxxxx [pegax](https://github.com/ropenscilabs/pegax)
+- xxxxx <pkg>binomen</pkg>
 
 
 Handling Taxonomic Name Lists
 -----------------------------
 
 - xxxxx <pkg>defrostR</pkg> - amphibian taxonomy
+- [splister](https://github.com/ropenscilabs/splister) - match species list against a reference list
+
+
+Working with NCBI and other sequence data
+-----------------------------------------
+
+- <pkg>microclass</pkg> Functions for assigning 16S sequence data to a taxonomic level in the tree-of-life for prokaryotes.
+- <pkg>ncbit</pkg> making NCBI taxonomic data locally available and searchable as an R object
+- <pkg>taxonomizr</pkg> functions for assigning taxonomy to NCBI accession numbers and taxon IDs based on NCBI's accession2taxid and taxdump files
+
+
+Specialized
+-----------
+
+- <pkg>monographaR</pkg> functions to facilitate the production of plant taxonomic monographs
+- <pkg>MonoPhy</pkg> Explore Monophyly (or Lack of it) of Taxonomic Groups in a Phylogeny
+- <pkg>taxlist</pkg> functions to import species lists from [Turboveg](<https://www.synbiosys.alterra.nl/turboveg>), a database management system for vegetation data

@@ -19,26 +19,47 @@
     <ul>
     <li>xxxxx <pkg>taxa</pkg></li>
     </ul>
-    <h2 id="parsing-taxonomic-names">Parsing Taxonomic Names</h2>
+    <h2 id="manipulatingparsing-taxonomic-names">Manipulating/Parsing Taxonomic Names</h2>
     <ul>
     <li>xxxxx <a href="https://github.com/ropenscilabs/pegax">pegax</a></li>
+    <li>xxxxx <pkg>binomen</pkg></li>
     </ul>
     <h2 id="handling-taxonomic-name-lists">Handling Taxonomic Name Lists</h2>
     <ul>
     <li>xxxxx <pkg>defrostR</pkg> - amphibian taxonomy</li>
+    <li><a href="https://github.com/ropenscilabs/splister">splister</a> - match species list against a reference list</li>
+    </ul>
+    <h2 id="working-with-ncbi-and-other-sequence-data">Working with NCBI and other sequence data</h2>
+    <ul>
+    <li><pkg>microclass</pkg> Functions for assigning 16S sequence data to a taxonomic level in the tree-of-life for prokaryotes.</li>
+    <li><pkg>ncbit</pkg> making NCBI taxonomic data locally available and searchable as an R object</li>
+    <li><pkg>taxonomizr</pkg> functions for assigning taxonomy to NCBI accession numbers and taxon IDs based on NCBI's accession2taxid and taxdump files</li>
+    </ul>
+    <h2 id="specialized">Specialized</h2>
+    <ul>
+    <li><pkg>monographaR</pkg> functions to facilitate the production of plant taxonomic monographs</li>
+    <li><pkg>MonoPhy</pkg> Explore Monophyly (or Lack of it) of Taxonomic Groups in a Phylogeny</li>
+    <li><pkg>taxlist</pkg> functions to import species lists from <a href="https://www.synbiosys.alterra.nl/turboveg">Turboveg</a>, a database management system for vegetation data</li>
     </ul>
   </info>
   <packagelist>
     <pkg priority="core">taxize</pkg>
     <pkg priority="core">taxa</pkg>
+    <pkg>binomen</pkg>
     <pkg>defrostR</pkg>
+    <pkg>microclass</pkg>
+    <pkg>monographaR</pkg>
+    <pkg>MonoPhy</pkg>
+    <pkg>ncbit</pkg>
     <pkg>ritis</pkg>
     <pkg>taxizedb</pkg>
+    <pkg>taxlist</pkg>
+    <pkg>taxonomizr</pkg>
     <pkg>Taxonstand</pkg>
     <pkg>wikitaxa</pkg>
     <pkg>worrms</pkg>
   </packagelist>
   <links>
-    <a href="https://github.com/ropensci/opendata">Open Data TaskView</a>
+    <a href="https://cran.rstudio.com/web/views/Phylogenetics.html">Phylogenetics Task View</a>
   </links>
 </CRANTaskView>
