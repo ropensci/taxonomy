@@ -5,30 +5,27 @@ If you have any comments or suggestions for additions or improvements for this a
 Taxonomic Data
 --------------
 
--   xxxxx <pkg>taxize</pkg> access to 20ish sources of taxonomic data sources
--   xxxxx <pkg>taxizedb</pkg> working with taxonomic database dumps, data at scale
--   xxxxx <pkg>ritis</pkg> Integrated Taxonomic Information System
--   xxxxx <pkg>wikitaxa</pkg> Wikipedia, Wikicommons, Wikspecies, and Wikidata
--   xxxxx <pkg>worrms</pkg> data from WoRMS
--   xxxxx <pkg>Taxonstand</pkg> data from The Plant List
-
-Taxonomic Classes
------------------
-
-- xxxxx <pkg>taxa</pkg>
+- <pkg>taxize</pkg> access to 20ish sources of taxonomic data sources
+- <pkg>taxizedb</pkg> working with taxonomic database dumps, data at scale
+- <pkg>ritis</pkg> Integrated Taxonomic Information System
+- <pkg>wikitaxa</pkg> Wikipedia, Wikicommons, Wikspecies, and Wikidata
+- <pkg>worrms</pkg> data from WoRMS
+- <pkg>Taxonstand</pkg> data from The Plant List
+- <pkg>Reol</pkg> data from Encyclopedia of Life
 
 
-Manipulating/Parsing Taxonomic Names
-------------------------------------
+Objects and Manipulating/Parsing Taxonomic Names
+------------------------------------------------
 
-- xxxxx [pegax](https://github.com/ropenscilabs/pegax)
-- xxxxx <pkg>binomen</pkg>
+- [pegax](https://github.com/ropenscilabs/pegax) C++ in R port of gnparser
+- <pkg>taxa</pkg>
+- <pkg>binomen</pkg> - will be deprecated soon, being wrapped in to <pkg>taxa</pkg>
 
 
 Handling Taxonomic Name Lists
 -----------------------------
 
-- xxxxx <pkg>defrostR</pkg> - amphibian taxonomy
+- <pkg>defrostR</pkg> - amphibian taxonomy
 - [splister](https://github.com/ropenscilabs/splister) - match species list against a reference list
 
 

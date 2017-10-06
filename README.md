@@ -8,28 +8,25 @@ If you have any comments or suggestions for additions or improvements for this a
 Taxonomic Data
 --------------
 
--   xxxxx [taxize](https://cran.rstudio.com/web/packages/taxize/index.html) access to 20ish sources of taxonomic data sources
--   xxxxx [taxizedb](https://cran.rstudio.com/web/packages/taxizedb/index.html) working with taxonomic database dumps, data at scale
--   xxxxx [ritis](https://cran.rstudio.com/web/packages/ritis/index.html) Integrated Taxonomic Information System
--   xxxxx [wikitaxa](https://cran.rstudio.com/web/packages/wikitaxa/index.html) Wikipedia, Wikicommons, Wikspecies, and Wikidata
--   xxxxx [worrms](https://cran.rstudio.com/web/packages/worrms/index.html) data from WoRMS
--   xxxxx [Taxonstand](https://cran.rstudio.com/web/packages/Taxonstand/index.html) data from The Plant List
+-   [taxize](https://cran.rstudio.com/web/packages/taxize/index.html) access to 20ish sources of taxonomic data sources
+-   [taxizedb](https://cran.rstudio.com/web/packages/taxizedb/index.html) working with taxonomic database dumps, data at scale
+-   [ritis](https://cran.rstudio.com/web/packages/ritis/index.html) Integrated Taxonomic Information System
+-   [wikitaxa](https://cran.rstudio.com/web/packages/wikitaxa/index.html) Wikipedia, Wikicommons, Wikspecies, and Wikidata
+-   [worrms](https://cran.rstudio.com/web/packages/worrms/index.html) data from WoRMS
+-   [Taxonstand](https://cran.rstudio.com/web/packages/Taxonstand/index.html) data from The Plant List
+-   [Reol](https://cran.rstudio.com/web/packages/Reol/index.html) data from Encyclopedia of Life
 
-Taxonomic Classes
------------------
+Objects and Manipulating/Parsing Taxonomic Names
+------------------------------------------------
 
--   xxxxx [taxa](https://cran.rstudio.com/web/packages/taxa/index.html)
-
-Manipulating/Parsing Taxonomic Names
-------------------------------------
-
--   xxxxx [pegax](https://github.com/ropenscilabs/pegax)
--   xxxxx [binomen](https://cran.rstudio.com/web/packages/binomen/index.html)
+-   [pegax](https://github.com/ropenscilabs/pegax) C++ in R port of gnparser
+-   [taxa](https://cran.rstudio.com/web/packages/taxa/index.html)
+-   [binomen](https://cran.rstudio.com/web/packages/binomen/index.html) - will be deprecated soon, being wrapped in to [taxa](https://cran.rstudio.com/web/packages/taxa/index.html)
 
 Handling Taxonomic Name Lists
 -----------------------------
 
--   xxxxx [defrostR](https://cran.rstudio.com/web/packages/defrostR/index.html) - amphibian taxonomy
+-   [defrostR](https://cran.rstudio.com/web/packages/defrostR/index.html) - amphibian taxonomy
 -   [splister](https://github.com/ropenscilabs/splister) - match species list against a reference list
 
 Working with NCBI and other sequence data
@@ -54,6 +51,7 @@ Specialized
 -   [monographaR](https://cran.rstudio.com/web/packages/monographaR/index.html)
 -   [MonoPhy](https://cran.rstudio.com/web/packages/MonoPhy/index.html)
 -   [ncbit](https://cran.rstudio.com/web/packages/ncbit/index.html)
+-   [Reol](https://cran.rstudio.com/web/packages/Reol/index.html)
 -   [ritis](https://cran.rstudio.com/web/packages/ritis/index.html)
 -   [taxa](https://cran.rstudio.com/web/packages/taxa/index.html) (core)
 -   [taxize](https://cran.rstudio.com/web/packages/taxize/index.html) (core)
