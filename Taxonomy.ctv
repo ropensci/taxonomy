@@ -2,42 +2,41 @@
   <name>Taxonomy</name>
   <topic>Taxonomy</topic>
   <maintainer email="scott@ropensci.org">Scott Chamberlain</maintainer>
-  <version>2017-10-06</version>
+  <version>2018-01-19</version>
   <info>
     <p>This article is about taxonomy in R.</p>
-    <p>If you have any comments or suggestions for additions or improvements for this article <a href="https://github.com/ropensci/webservices/issues">submit an issue</a>, or make some changes and <a href="https://github.com/ropensci/taxonomy/pulls">submit a pull request</a>. If you have an issue with one of the packages discussed below, please contact the maintainer of that package.</p>
+    <p>If you have any comments or suggestions for additions or improvements for this article <a href="https://github.com/ropensci/taxonomy/issues">submit an issue</a>, or make some changes and <a href="https://github.com/ropensci/taxonomy/pulls">submit a pull request</a>. If you have an issue with one of the packages discussed below, please contact the maintainer of that package.</p>
     <h2 id="taxonomic-data">Taxonomic Data</h2>
+    <p>The following packages mostly deal with getting taxonomic data from the web onto your machine.</p>
     <ul>
-    <li><pkg>taxize</pkg> access to 20ish sources of taxonomic data sources</li>
+    <li><pkg>taxize</pkg> access to 20ish sources of taxonomic data sources. This is the place to go for most taxononomic data. <pkg>taxize</pkg> connects to a lot of data sources, and has consistent data outputs across the data sources. In addition, there’s operations that a user wants to do that are consistent across data sources, hiding the gory details of each data source. The only caveat is that if you have a really slow internet connection or you are dealing with A LOT of names, then you may want to use <pkg>taxizedb</pkg>.</li>
     <li><pkg>taxizedb</pkg> working with taxonomic database dumps, data at scale</li>
-    <li><pkg>ritis</pkg> Integrated Taxonomic Information System</li>
-    <li><pkg>wikitaxa</pkg> Wikipedia, Wikicommons, Wikspecies, and Wikidata</li>
-    <li><pkg>worrms</pkg> data from WoRMS</li>
+    <li><pkg>ritis</pkg> is a client for the Integrated Taxonomic Information System (ITIS) database of taxonomic data. ITIS is run by USGS in the US. It provides access to ITIS’s Solr web service (think for search), as well as their REST API more for fetching data for specific things by name or taxonomic ID.</li>
+    <li><pkg>wikitaxa</pkg> is a client for Wikipedia, Wikicommons, Wikspecies, and Wikidata taxonomic data. It is sometimes a bit odd since there is no interface specifically for taxonomic data besides Wikispecies, so you can end up with results that are not really taxonomic as well - but we do our best.</li>
+    <li><pkg>worrms</pkg> data from <a href="">WoRMS (World Register of Marine Species)</a></li>
     <li><pkg>Taxonstand</pkg> data from The Plant List</li>
-    <li><pkg>Reol</pkg> data from Encyclopedia of Life</li>
+    <li><pkg>Reol</pkg> a client for all data from Encyclopedia of Life - which includes taxonomic data. Note that <pkg>taxize</pkg> also interfaces with EOL data, only the taxonomic data though.</li>
     </ul>
     <h2 id="objects-and-manipulatingparsing-taxonomic-names">Objects and Manipulating/Parsing Taxonomic Names</h2>
     <ul>
-    <li><a href="https://github.com/ropenscilabs/pegax">pegax</a> C++ in R port of gnparser</li>
-    <li><pkg>taxa</pkg></li>
-    <li><pkg>binomen</pkg> - will be deprecated soon, being wrapped in to <pkg>taxa</pkg></li>
+    <li><a href="https://github.com/ropenscilabs/pegax">pegax</a> is a C++ in R port of <a href="https://github.com/GlobalNamesArchitecture/gnparser/">gnparser</a> from the GlobalNamesArchitecture project. It is still in development</li>
+    <li><pkg>taxa</pkg> defines a set of taxonomic objects (using S3 and R6) for both use cases where only taxonomic data is of interest, as well as when one has taxonomic data combined with other data on the taxa. <pkg>taxa</pkg> aims to form the basis upon which other taxonomic packages can be built, using common classes. <pkg>binomen</pkg> - will be deprecated soon, being wrapped in to <pkg>taxa</pkg></li>
     </ul>
     <h2 id="handling-taxonomic-name-lists">Handling Taxonomic Name Lists</h2>
     <ul>
     <li><pkg>defrostR</pkg> - amphibian taxonomy</li>
-    <li><a href="https://github.com/ropenscilabs/splister">splister</a> - match species list against a reference list</li>
+    <li><a href="https://github.com/ropenscilabs/splister">splister</a> - match species list against a reference list. Still in development</li>
     </ul>
     <h2 id="working-with-ncbi-and-other-sequence-data">Working with NCBI and other sequence data</h2>
     <ul>
-    <li><pkg>microclass</pkg> Functions for assigning 16S sequence data to a taxonomic level in the tree-of-life for prokaryotes.</li>
-    <li><pkg>ncbit</pkg> making NCBI taxonomic data locally available and searchable as an R object</li>
-    <li><pkg>taxonomizr</pkg> functions for assigning taxonomy to NCBI accession numbers and taxon IDs based on NCBI's accession2taxid and taxdump files</li>
+    <li><p>NCBI taxonomic data is available from a number of R packages. <pkg>taxizedb</pkg> provides access to local version of NCBI’s taxonomy - in addition to taxonomies for other data sources (see above). <pkg>ncbit</pkg> makes NCBI taxonomic data locally available and searchable as an R object (a <code>data.frame</code>). The package comes with a version from 2013, but you can choose to update it; although updating it still seemed to use the old version from 2013. <pkg>taxonomizr</pkg> contains functions for assigning taxonomy to NCBI accession numbers and taxon IDs based on NCBI’s <code>accession2taxid</code> and <code>taxdump</code> files.</p></li>
+    <li><p><pkg>microclass</pkg> Functions for assigning 16S sequence data to a taxonomic level in the tree-of-life for prokaryotes.</p></li>
     </ul>
-    <h2 id="specialized">Specialized</h2>
+    <h2 id="specialized-packages">Specialized packages</h2>
     <ul>
     <li><pkg>monographaR</pkg> functions to facilitate the production of plant taxonomic monographs</li>
     <li><pkg>MonoPhy</pkg> Explore Monophyly (or Lack of it) of Taxonomic Groups in a Phylogeny</li>
-    <li><pkg>taxlist</pkg> functions to import species lists from <a href="https://www.synbiosys.alterra.nl/turboveg">Turboveg</a>, a database management system for vegetation data</li>
+    <li><pkg>taxlist</pkg> functions to import species lists from <a href="https://www.synbiosys.alterra.nl/turboveg/">Turboveg</a>, a database management system for vegetation data</li>
     </ul>
   </info>
   <packagelist>
