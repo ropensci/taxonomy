@@ -44,7 +44,17 @@
         </li>
         <li>
 <a href="../packages/taxizedb/index.html">taxizedb</a>
-          working with taxonomic database dumps, data at scale
+          came out of the
+<a href="../packages/taxize/index.html">taxize</a>
+          package, with sights set on helping people work with larger taxonomic data sets, or that perhaps have infrequent access to the internet.
+<a href="../packages/taxizedb/index.html">taxizedb</a>
+          downloads taxonomic database dumps from many different providers - and makes it easy to either query them with SQL or plug into
+<tt>dplyr</tt>
+          package to use that interface.
+<a href="../packages/taxizedb/index.html">taxizedb</a>
+          is starting to gain some of the functionality of
+<a href="../packages/taxize/index.html">taxize</a>
+          (e.g., get a taxonomic classification) but without having to do web requests, and doing large set of them much faster.
         </li>
         <li>
 <a href="../packages/ritis/index.html">ritis</a>
@@ -56,14 +66,15 @@
         </li>
         <li>
 <a href="../packages/worrms/index.html">worrms</a>
-          data from
-          <a href="">
+          client for the
+          <a href="http://www.marinespecies.org/">
             WoRMS (World Register of Marine Species)
           </a>
+          API. Contains mostly taxonomic data, but also trait data.
         </li>
         <li>
 <a href="../packages/Taxonstand/index.html">Taxonstand</a>
-          data from The Plant List
+          data from The Plant List. This package takes in plant taxon names, and downloads CSV files from The Plant List website, then presents those as a data.frame within R.
         </li>
         <li>
 <a href="../packages/Reol/index.html">Reol</a>
@@ -72,9 +83,12 @@
           also interfaces with EOL data, only the taxonomic data though.
         </li>
       </ul>
-<h2 id="objects-and-manipulatingparsing-taxonomic-names">
-        Objects and Manipulating/Parsing Taxonomic Names
+<h2 id="r-objects-and-manipulatingparsing-taxonomic-names">
+        R Objects and Manipulating/Parsing Taxonomic Names
       </h2>
+      <p>
+        The following packages don’t fetch taxonomic dat as those in the above section, but are focused around providing tooling around taxonomic names and data.
+      </p>
       <ul>
 <li>
           <a href="https://github.com/ropenscilabs/pegax">
@@ -84,7 +98,7 @@
           <a href="https://github.com/GlobalNamesArchitecture/gnparser/">
             gnparser
           </a>
-          from the GlobalNamesArchitecture project. It is still in development
+          from the GlobalNamesArchitecture project. It is still in development.
         </li>
         <li>
 <a href="../packages/taxa/index.html">taxa</a>
@@ -99,6 +113,9 @@
 <h2 id="handling-taxonomic-name-lists">
         Handling Taxonomic Name Lists
       </h2>
+      <p>
+        There are a few packages that deal specifically with handling species lists:
+      </p>
       <ul>
 <li>
 <a href="../packages/defrostR/index.html">defrostR</a>
@@ -111,8 +128,8 @@
           - match species list against a reference list. Still in development
         </li>
       </ul>
-<h2 id="working-with-ncbi-and-other-sequence-data">
-        Working with NCBI and other sequence data
+<h2 id="ncbi-data">
+        NCBI data
       </h2>
       <ul>
 <li>
@@ -134,7 +151,7 @@
         <li>
           <p>
 <a href="../packages/microclass/index.html">microclass</a>
-            Functions for assigning 16S sequence data to a taxonomic level in the tree-of-life for prokaryotes.
+            has functions for assigning 16S sequence data to a taxonomic level in the tree-of-life for prokaryotes.
           </p>
         </li>
       </ul>

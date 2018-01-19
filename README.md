@@ -26,8 +26,18 @@ web onto your machine.
     each data source. The only caveat is that if you have a really slow
     internet connection or you are dealing with A LOT of names, then you
     may want to use [taxizedb](https://cran.rstudio.com/web/packages/taxizedb/index.html).
-  - [taxizedb](https://cran.rstudio.com/web/packages/taxizedb/index.html) working with taxonomic
-    database dumps, data at scale
+  - [taxizedb](https://cran.rstudio.com/web/packages/taxizedb/index.html) came out of the
+    [taxize](https://cran.rstudio.com/web/packages/taxize/index.html) package, with sights set on
+    helping people work with larger taxonomic data sets, or that perhaps
+    have infrequent access to the internet.
+    [taxizedb](https://cran.rstudio.com/web/packages/taxizedb/index.html) downloads taxonomic
+    database dumps from many different providers - and makes it easy to
+    either query them with SQL or plug into `dplyr` package to use that
+    interface. [taxizedb](https://cran.rstudio.com/web/packages/taxizedb/index.html) is starting
+    to gain some of the functionality of
+    [taxize](https://cran.rstudio.com/web/packages/taxize/index.html) (e.g., get a taxonomic
+    classification) but without having to do web requests, and doing
+    large set of them much faster.
   - [ritis](https://cran.rstudio.com/web/packages/ritis/index.html) is a client for the Integrated
     Taxonomic Information System (ITIS) database of taxonomic data. ITIS
     is run by USGS in the US. It provides access to ITIS’s Solr web
@@ -38,20 +48,28 @@ web onto your machine.
     is sometimes a bit odd since there is no interface specifically for
     taxonomic data besides Wikispecies, so you can end up with results
     that are not really taxonomic as well - but we do our best.
-  - [worrms](https://cran.rstudio.com/web/packages/worrms/index.html) data from [WoRMS (World
-    Register of Marine Species)]()
+  - [worrms](https://cran.rstudio.com/web/packages/worrms/index.html) client for the [WoRMS (World
+    Register of Marine Species)](http://www.marinespecies.org/) API.
+    Contains mostly taxonomic data, but also trait data.
   - [Taxonstand](https://cran.rstudio.com/web/packages/Taxonstand/index.html) data from The Plant
-    List
+    List. This package takes in plant taxon names, and downloads CSV
+    files from The Plant List website, then presents those as a
+    data.frame within R.
   - [Reol](https://cran.rstudio.com/web/packages/Reol/index.html) a client for all data from
     Encyclopedia of Life - which includes taxonomic data. Note that
     [taxize](https://cran.rstudio.com/web/packages/taxize/index.html) also interfaces with EOL
     data, only the taxonomic data though.
 
-## Objects and Manipulating/Parsing Taxonomic Names
+## R Objects and Manipulating/Parsing Taxonomic Names
+
+The following packages don’t fetch taxonomic dat as those in the above
+section, but are focused around providing tooling around taxonomic names
+and data.
 
   - [pegax](https://github.com/ropenscilabs/pegax) is a C++ in R port of
     [gnparser](https://github.com/GlobalNamesArchitecture/gnparser/)
-    from the GlobalNamesArchitecture project. It is still in development
+    from the GlobalNamesArchitecture project. It is still in
+    development.
   - [taxa](https://cran.rstudio.com/web/packages/taxa/index.html) defines a set of taxonomic
     objects (using S3 and R6) for both use cases where only taxonomic
     data is of interest, as well as when one has taxonomic data combined
@@ -63,11 +81,14 @@ web onto your machine.
 
 ## Handling Taxonomic Name Lists
 
+There are a few packages that deal specifically with handling species
+lists:
+
   - [defrostR](https://cran.rstudio.com/web/packages/defrostR/index.html) - amphibian taxonomy
   - [splister](https://github.com/ropenscilabs/splister) - match species
     list against a reference list. Still in development
 
-## Working with NCBI and other sequence data
+## NCBI data
 
   - NCBI taxonomic data is available from a number of R packages.
     [taxizedb](https://cran.rstudio.com/web/packages/taxizedb/index.html) provides access to local
@@ -81,7 +102,7 @@ web onto your machine.
     for assigning taxonomy to NCBI accession numbers and taxon IDs based
     on NCBI’s `accession2taxid` and `taxdump` files.
 
-  - [microclass](https://cran.rstudio.com/web/packages/microclass/index.html) Functions for
+  - [microclass](https://cran.rstudio.com/web/packages/microclass/index.html) has functions for
     assigning 16S sequence data to a taxonomic level in the tree-of-life
     for prokaryotes.
 
