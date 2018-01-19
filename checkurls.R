@@ -1,5 +1,5 @@
 if (!require("httr")) {
-    install.packages("httr", repos = "http://cran.rstudio.com/")
+    install.packages("httr", repos = "https://cran.rstudio.com/")
 }
 
 extract_urls <- function(file, ...) {
@@ -44,5 +44,5 @@ print.url_check <- function(x, ...) {
     invisible(x)
 }
 
-u <- extract_urls("webtech.md")
+u <- extract_urls("taxonomy.md")
 print(ch <- check_urls(u))

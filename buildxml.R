@@ -1,4 +1,4 @@
-if(!require("stringr")) install.packages("stringr", repos="http://cran.rstudio.com")
+if(!require("stringr")) install.packages("stringr", repos="https://cran.rstudio.com")
 template <- readLines("Taxonomy.ctv")
 pattern <- "pkg>[[:alnum:]]+[[:alnum:].]*[[:alnum:]]+"
 out <- paste0(template, collapse = " ")
