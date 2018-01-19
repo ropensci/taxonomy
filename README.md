@@ -1,7 +1,7 @@
 ## Taxonomy
 
 <div>
-| | |n|---|---|
+
 This article is about taxonomy in R.
 
 If you have any comments or suggestions for additions or improvements

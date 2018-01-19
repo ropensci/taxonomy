@@ -12,7 +12,7 @@ README.md: Taxonomy.html
 	sed -i.tmp -e 's|( \[|(\[|g' README.md
 	sed -i.tmp -e 's| : |: |g' README.md
 	sed -i.tmp -e 's|../packages/|https://cran.rstudio.com/web/packages/|g' README.md
-	sed -i.tmp -e '4s/.*/| | |\n|---|---|/' README.md
+	# sed -i.tmp -e '4s/.*/| | |\n|---|---|/' README.md
 	#sed -i.tmp -e '4i/*Do not edit this README by hand. See \[CONTRIBUTING.md\]\(CONTRIBUTING.md\).*\n/' README.md
 	rm *.tmp
 
