@@ -17,11 +17,14 @@
     <li><pkg>Taxonstand</pkg> data from The Plant List. This package takes in plant taxon names, and downloads CSV files from The Plant List website, then presents those as a data.frame within R.</li>
     <li><pkg>Reol</pkg> a client for all data from Encyclopedia of Life - which includes taxonomic data. Note that <pkg>taxize</pkg> also interfaces with EOL data, only the taxonomic data though.</li>
     </ul>
-    <h2 id="r-objects-and-manipulatingparsing-taxonomic-names">R Objects and Manipulating/Parsing Taxonomic Names</h2>
+    <h2 id="taxonomic-classes">Taxonomic Classes</h2>
+    <p>The <pkg>taxa</pkg> package defines a set of taxonomic objects (using S3 and R6) for both use cases where only taxonomic data is of interest, as well as when one has taxonomic data combined with other data on the taxa. <pkg>taxa</pkg> aims to form the basis upon which other taxonomic packages can be built, using common classes. <pkg>binomen</pkg> - will be deprecated soon, being wrapped in to <pkg>taxa</pkg>.</p>
+    <h2 id="manipulatingparsing-taxonomic-names">Manipulating/Parsing Taxonomic Names</h2>
     <p>The following packages don’t fetch taxonomic dat as those in the above section, but are focused around providing tooling around taxonomic names and data.</p>
     <ul>
     <li><a href="https://github.com/ropenscilabs/pegax">pegax</a> is a C++ in R port of <a href="https://github.com/GlobalNamesArchitecture/gnparser/">gnparser</a> from the GlobalNamesArchitecture project. It is still in development.</li>
-    <li><pkg>taxa</pkg> defines a set of taxonomic objects (using S3 and R6) for both use cases where only taxonomic data is of interest, as well as when one has taxonomic data combined with other data on the taxa. <pkg>taxa</pkg> aims to form the basis upon which other taxonomic packages can be built, using common classes. <pkg>binomen</pkg> - will be deprecated soon, being wrapped in to <pkg>taxa</pkg></li>
+    <li><pkg>metacoder</pkg> specializes in metabarcoding. It can parse, manipulate, and visualize metabarcoding/taxonomic data. It leverages the <pkg>taxa</pkg> package (<a href="https://github.com/grunwaldlab/metacoder">GitHub</a>)</li>
+    <li><a href="https://github.com/ropensci/taxview">taxview</a> is a in development package to help users summarize taxonomic data. Summarizing so far is taking form of getting taxonomic hierarchy data (via the <pkg>taxize</pkg> package) to facilitate taxonomic summaries. Visualization isn’t done yet.</li>
     </ul>
     <h2 id="handling-taxonomic-name-lists">Handling Taxonomic Name Lists</h2>
     <p>There are a few packages that deal specifically with handling species lists:</p>
@@ -31,14 +34,15 @@
     </ul>
     <h2 id="ncbi-data">NCBI data</h2>
     <ul>
-    <li><p>NCBI taxonomic data is available from a number of R packages. <pkg>taxizedb</pkg> provides access to local version of NCBI’s taxonomy - in addition to taxonomies for other data sources (see above). <pkg>ncbit</pkg> makes NCBI taxonomic data locally available and searchable as an R object (a <code>data.frame</code>). The package comes with a version from 2013, but you can choose to update it; although updating it still seemed to use the old version from 2013. <pkg>taxonomizr</pkg> contains functions for assigning taxonomy to NCBI accession numbers and taxon IDs based on NCBI’s <code>accession2taxid</code> and <code>taxdump</code> files.</p></li>
-    <li><p><pkg>microclass</pkg> has functions for assigning 16S sequence data to a taxonomic level in the tree-of-life for prokaryotes.</p></li>
+    <li>NCBI taxonomic data is available from a number of R packages. <pkg>taxizedb</pkg> provides access to local version of NCBI’s taxonomy - in addition to taxonomies for other data sources (see above). <pkg>ncbit</pkg> makes NCBI taxonomic data locally available and searchable as an R object (a <code>data.frame</code>). The package comes with a version from 2013, but you can choose to update it; although updating it still seemed to use the old version from 2013. <pkg>taxonomizr</pkg> contains functions for assigning taxonomy to NCBI accession numbers and taxon IDs based on NCBI’s <code>accession2taxid</code> and <code>taxdump</code> files.</li>
+    <li><pkg>microclass</pkg> has functions for assigning 16S sequence data to a taxonomic level in the tree-of-life for prokaryotes.</li>
     </ul>
     <h2 id="specialized-packages">Specialized packages</h2>
     <ul>
     <li><pkg>monographaR</pkg> functions to facilitate the production of plant taxonomic monographs</li>
     <li><pkg>MonoPhy</pkg> Explore Monophyly (or Lack of it) of Taxonomic Groups in a Phylogeny</li>
-    <li><pkg>taxlist</pkg> functions to import species lists from <a href="https://www.synbiosys.alterra.nl/turboveg/">Turboveg</a>, a database management system for vegetation data</li>
+    <li><pkg>taxlist</pkg> has functions to import species lists from <a href="https://www.synbiosys.alterra.nl/turboveg/">Turboveg</a>, a database management system for vegetation data</li>
+    <li><pkg>vegdata</pkg> has functions to get taxonomic data from <a href="https://www.synbiosys.alterra.nl/turboveg/">Turboveg</a>, and <a href="https://www.vegetweb.de/">VegetWeb</a> (German plant data)</li>
     </ul>
   </info>
   <packagelist>
@@ -46,6 +50,7 @@
     <pkg priority="core">taxa</pkg>
     <pkg>binomen</pkg>
     <pkg>defrostR</pkg>
+    <pkg>metacoder</pkg>
     <pkg>microclass</pkg>
     <pkg>monographaR</pkg>
     <pkg>MonoPhy</pkg>
@@ -56,6 +61,7 @@
     <pkg>taxlist</pkg>
     <pkg>taxonomizr</pkg>
     <pkg>Taxonstand</pkg>
+    <pkg>vegdata</pkg>
     <pkg>wikitaxa</pkg>
     <pkg>worrms</pkg>
   </packagelist>

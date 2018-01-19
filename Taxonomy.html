@@ -83,8 +83,21 @@
           also interfaces with EOL data, only the taxonomic data though.
         </li>
       </ul>
-<h2 id="r-objects-and-manipulatingparsing-taxonomic-names">
-        R Objects and Manipulating/Parsing Taxonomic Names
+<h2 id="taxonomic-classes">
+        Taxonomic Classes
+      </h2>
+      <p>
+        The
+<a href="../packages/taxa/index.html">taxa</a>
+        package defines a set of taxonomic objects (using S3 and R6) for both use cases where only taxonomic data is of interest, as well as when one has taxonomic data combined with other data on the taxa.
+<a href="../packages/taxa/index.html">taxa</a>
+        aims to form the basis upon which other taxonomic packages can be built, using common classes.
+<a href="../packages/binomen/index.html">binomen</a>
+        - will be deprecated soon, being wrapped in to
+<a href="../packages/taxa/index.html">taxa</a>.
+      </p>
+      <h2 id="manipulatingparsing-taxonomic-names">
+        Manipulating/Parsing Taxonomic Names
       </h2>
       <p>
         The following packages don’t fetch taxonomic dat as those in the above section, but are focused around providing tooling around taxonomic names and data.
@@ -101,13 +114,21 @@
           from the GlobalNamesArchitecture project. It is still in development.
         </li>
         <li>
+<a href="../packages/metacoder/index.html">metacoder</a>
+          specializes in metabarcoding. It can parse, manipulate, and visualize metabarcoding/taxonomic data. It leverages the
 <a href="../packages/taxa/index.html">taxa</a>
-          defines a set of taxonomic objects (using S3 and R6) for both use cases where only taxonomic data is of interest, as well as when one has taxonomic data combined with other data on the taxa.
-<a href="../packages/taxa/index.html">taxa</a>
-          aims to form the basis upon which other taxonomic packages can be built, using common classes.
-<a href="../packages/binomen/index.html">binomen</a>
-          - will be deprecated soon, being wrapped in to
-<a href="../packages/taxa/index.html">taxa</a>
+          package (
+          <a href="https://github.com/grunwaldlab/metacoder">
+            GitHub
+          </a>)
+        </li>
+        <li>
+          <a href="https://github.com/ropensci/taxview">
+            taxview
+          </a>
+          is a in development package to help users summarize taxonomic data. Summarizing so far is taking form of getting taxonomic hierarchy data (via the
+<a href="../packages/taxize/index.html">taxize</a>
+          package) to facilitate taxonomic summaries. Visualization isn’t done yet.
         </li>
       </ul>
 <h2 id="handling-taxonomic-name-lists">
@@ -133,26 +154,22 @@
       </h2>
       <ul>
 <li>
-          <p>
-            NCBI taxonomic data is available from a number of R packages.
+          NCBI taxonomic data is available from a number of R packages.
 <a href="../packages/taxizedb/index.html">taxizedb</a>
-            provides access to local version of NCBI’s taxonomy - in addition to taxonomies for other data sources (see above).
+          provides access to local version of NCBI’s taxonomy - in addition to taxonomies for other data sources (see above).
 <a href="../packages/ncbit/index.html">ncbit</a>
-            makes NCBI taxonomic data locally available and searchable as an R object (a
+          makes NCBI taxonomic data locally available and searchable as an R object (a
 <tt>data.frame</tt>). The package comes with a version from 2013, but you can choose to update it; although updating it still seemed to use the old version from 2013.
 <a href="../packages/taxonomizr/index.html">taxonomizr</a>
-            contains functions for assigning taxonomy to NCBI accession numbers and taxon IDs based on NCBI’s
+          contains functions for assigning taxonomy to NCBI accession numbers and taxon IDs based on NCBI’s
 <tt>accession2taxid</tt>
-            and
+          and
 <tt>taxdump</tt>
-            files.
-          </p>
+          files.
         </li>
         <li>
-          <p>
 <a href="../packages/microclass/index.html">microclass</a>
-            has functions for assigning 16S sequence data to a taxonomic level in the tree-of-life for prokaryotes.
-          </p>
+          has functions for assigning 16S sequence data to a taxonomic level in the tree-of-life for prokaryotes.
         </li>
       </ul>
 <h2 id="specialized-packages">
@@ -169,10 +186,21 @@
         </li>
         <li>
 <a href="../packages/taxlist/index.html">taxlist</a>
-          functions to import species lists from
+          has functions to import species lists from
           <a href="https://www.synbiosys.alterra.nl/turboveg/">
             Turboveg
           </a>, a database management system for vegetation data
+        </li>
+        <li>
+<a href="../packages/vegdata/index.html">vegdata</a>
+          has functions to get taxonomic data from
+          <a href="https://www.synbiosys.alterra.nl/turboveg/">
+            Turboveg
+          </a>, and
+          <a href="https://www.vegetweb.de/">
+            VegetWeb
+          </a>
+          (German plant data)
         </li>
       </ul>
 </div>
@@ -181,6 +209,7 @@
   <ul>
 <li><a href="../packages/binomen/index.html">binomen</a></li>
     <li><a href="../packages/defrostR/index.html">defrostR</a></li>
+    <li><a href="../packages/metacoder/index.html">metacoder</a></li>
     <li><a href="../packages/microclass/index.html">microclass</a></li>
     <li><a href="../packages/monographaR/index.html">monographaR</a></li>
     <li><a href="../packages/MonoPhy/index.html">MonoPhy</a></li>
@@ -195,6 +224,7 @@
     <li><a href="../packages/taxlist/index.html">taxlist</a></li>
     <li><a href="../packages/taxonomizr/index.html">taxonomizr</a></li>
     <li><a href="../packages/Taxonstand/index.html">Taxonstand</a></li>
+    <li><a href="../packages/vegdata/index.html">vegdata</a></li>
     <li><a href="../packages/wikitaxa/index.html">wikitaxa</a></li>
     <li><a href="../packages/worrms/index.html">worrms</a></li>
   </ul>

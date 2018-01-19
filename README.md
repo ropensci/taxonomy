@@ -60,7 +60,18 @@ web onto your machine.
     [taxize](https://cran.rstudio.com/web/packages/taxize/index.html) also interfaces with EOL
     data, only the taxonomic data though.
 
-## R Objects and Manipulating/Parsing Taxonomic Names
+## Taxonomic Classes
+
+The [taxa](https://cran.rstudio.com/web/packages/taxa/index.html) package defines a set of
+taxonomic objects (using S3 and R6) for both use cases where only
+taxonomic data is of interest, as well as when one has taxonomic data
+combined with other data on the taxa.
+[taxa](https://cran.rstudio.com/web/packages/taxa/index.html) aims to form the basis upon which
+other taxonomic packages can be built, using common classes.
+[binomen](https://cran.rstudio.com/web/packages/binomen/index.html) - will be deprecated soon,
+being wrapped in to [taxa](https://cran.rstudio.com/web/packages/taxa/index.html).
+
+## Manipulating/Parsing Taxonomic Names
 
 The following packages don’t fetch taxonomic dat as those in the above
 section, but are focused around providing tooling around taxonomic names
@@ -70,14 +81,16 @@ and data.
     [gnparser](https://github.com/GlobalNamesArchitecture/gnparser/)
     from the GlobalNamesArchitecture project. It is still in
     development.
-  - [taxa](https://cran.rstudio.com/web/packages/taxa/index.html) defines a set of taxonomic
-    objects (using S3 and R6) for both use cases where only taxonomic
-    data is of interest, as well as when one has taxonomic data combined
-    with other data on the taxa. [taxa](https://cran.rstudio.com/web/packages/taxa/index.html)
-    aims to form the basis upon which other taxonomic packages can be
-    built, using common classes.
-    [binomen](https://cran.rstudio.com/web/packages/binomen/index.html) - will be deprecated soon,
-    being wrapped in to [taxa](https://cran.rstudio.com/web/packages/taxa/index.html)
+  - [metacoder](https://cran.rstudio.com/web/packages/metacoder/index.html) specializes in
+    metabarcoding. It can parse, manipulate, and visualize
+    metabarcoding/taxonomic data. It leverages the
+    [taxa](https://cran.rstudio.com/web/packages/taxa/index.html) package (
+    [GitHub](https://github.com/grunwaldlab/metacoder))
+  - [taxview](https://github.com/ropensci/taxview) is a in development
+    package to help users summarize taxonomic data. Summarizing so far
+    is taking form of getting taxonomic hierarchy data (via the
+    [taxize](https://cran.rstudio.com/web/packages/taxize/index.html) package) to facilitate
+    taxonomic summaries. Visualization isn’t done yet.
 
 ## Handling Taxonomic Name Lists
 
@@ -101,7 +114,6 @@ lists:
     [taxonomizr](https://cran.rstudio.com/web/packages/taxonomizr/index.html) contains functions
     for assigning taxonomy to NCBI accession numbers and taxon IDs based
     on NCBI’s `accession2taxid` and `taxdump` files.
-
   - [microclass](https://cran.rstudio.com/web/packages/microclass/index.html) has functions for
     assigning 16S sequence data to a taxonomic level in the tree-of-life
     for prokaryotes.
@@ -112,10 +124,14 @@ lists:
     facilitate the production of plant taxonomic monographs
   - [MonoPhy](https://cran.rstudio.com/web/packages/MonoPhy/index.html) Explore Monophyly (or Lack
     of it) of Taxonomic Groups in a Phylogeny
-  - [taxlist](https://cran.rstudio.com/web/packages/taxlist/index.html) functions to import
+  - [taxlist](https://cran.rstudio.com/web/packages/taxlist/index.html) has functions to import
     species lists from
     [Turboveg](https://www.synbiosys.alterra.nl/turboveg/), a database
     management system for vegetation data
+  - [vegdata](https://cran.rstudio.com/web/packages/vegdata/index.html) has functions to get
+    taxonomic data from
+    [Turboveg](https://www.synbiosys.alterra.nl/turboveg/), and
+    [VegetWeb](https://www.vegetweb.de/) (German plant data)
 
 </div>
 
@@ -123,6 +139,7 @@ lists:
 
   - [binomen](https://cran.rstudio.com/web/packages/binomen/index.html)
   - [defrostR](https://cran.rstudio.com/web/packages/defrostR/index.html)
+  - [metacoder](https://cran.rstudio.com/web/packages/metacoder/index.html)
   - [microclass](https://cran.rstudio.com/web/packages/microclass/index.html)
   - [monographaR](https://cran.rstudio.com/web/packages/monographaR/index.html)
   - [MonoPhy](https://cran.rstudio.com/web/packages/MonoPhy/index.html)
@@ -135,6 +152,7 @@ lists:
   - [taxlist](https://cran.rstudio.com/web/packages/taxlist/index.html)
   - [taxonomizr](https://cran.rstudio.com/web/packages/taxonomizr/index.html)
   - [Taxonstand](https://cran.rstudio.com/web/packages/Taxonstand/index.html)
+  - [vegdata](https://cran.rstudio.com/web/packages/vegdata/index.html)
   - [wikitaxa](https://cran.rstudio.com/web/packages/wikitaxa/index.html)
   - [worrms](https://cran.rstudio.com/web/packages/worrms/index.html)
 
