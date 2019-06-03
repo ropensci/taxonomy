@@ -1,7 +1,7 @@
 <CRANTaskView>
   <name>Taxonomy</name>
   <topic>Taxonomy</topic>
-  <maintainer email="scott@ropensci.org">Scott Chamberlain</maintainer>
+  <maintainer email="myrmecocystus@gmail.com">Scott Chamberlain</maintainer>
   <version>2018-01-19</version>
   <info>
     <p>This article is about taxonomy in R.</p>
