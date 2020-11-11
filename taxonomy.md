@@ -13,13 +13,12 @@ The following packages mostly deal with getting taxonomic data from the web onto
 - <pkg>wikitaxa</pkg> is a client for Wikipedia, Wikicommons, Wikspecies, and Wikidata taxonomic data. It is sometimes a bit odd since there is no interface specifically for taxonomic data besides Wikispecies, so you can end up with results that are not really taxonomic as well - but we do our best.
 - <pkg>worrms</pkg> client for the [WoRMS (World Register of Marine Species)](http://www.marinespecies.org/) API. Contains mostly taxonomic data, but also trait data.
 - <pkg>Taxonstand</pkg> data from The Plant List. This package takes in plant taxon names, and downloads CSV files from The Plant List website, then presents those as a data.frame within R.
-- <pkg>Reol</pkg> a client for all data from Encyclopedia of Life - which includes taxonomic data. Note that <pkg>taxize</pkg> also interfaces with EOL data, only the taxonomic data though.
 
 
 Taxonomic Classes
 -----------------
 
-The <pkg>taxa</pkg> package defines a set of taxonomic objects (using S3 and R6) for both use cases where only taxonomic data is of interest, as well as when one has taxonomic data combined with other data on the taxa. <pkg>taxa</pkg> aims to form the basis upon which other taxonomic packages can be built, using common classes. <pkg>binomen</pkg> - will be deprecated soon, being wrapped in to <pkg>taxa</pkg>.
+The <pkg>taxa</pkg> package defines a set of taxonomic objects (using S3 and R6) for both use cases where only taxonomic data is of interest, as well as when one has taxonomic data combined with other data on the taxa. <pkg>taxa</pkg> aims to form the basis upon which other taxonomic packages can be built, using common classes.
 
 
 Manipulating/Parsing Taxonomic Names
@@ -51,7 +50,6 @@ Specialized packages
 --------------------
 
 - <pkg>monographaR</pkg> functions to facilitate the production of plant taxonomic monographs
-- <pkg>MonoPhy</pkg> Explore Monophyly (or Lack of it) of Taxonomic Groups in a Phylogeny
 - <pkg>taxlist</pkg> has functions to import species lists from [Turboveg](<https://www.synbiosys.alterra.nl/turboveg/>), a database management system for vegetation data
 - <pkg>vegdata</pkg> has functions to get taxonomic data from [Turboveg](<https://www.synbiosys.alterra.nl/turboveg/>), and [VegetWeb](https://www.vegetweb.de/) (German plant data)
 

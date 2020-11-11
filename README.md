@@ -55,10 +55,6 @@ web onto your machine.
     List. This package takes in plant taxon names, and downloads CSV
     files from The Plant List website, then presents those as a
     data.frame within R.
-  - [Reol](https://cran.rstudio.com/web/packages/Reol/index.html) a client for all data from
-    Encyclopedia of Life - which includes taxonomic data. Note that
-    [taxize](https://cran.rstudio.com/web/packages/taxize/index.html) also interfaces with EOL
-    data, only the taxonomic data though.
 
 ## Taxonomic Classes
 
@@ -68,8 +64,6 @@ taxonomic data is of interest, as well as when one has taxonomic data
 combined with other data on the taxa.
 [taxa](https://cran.rstudio.com/web/packages/taxa/index.html) aims to form the basis upon which
 other taxonomic packages can be built, using common classes.
-[binomen](https://cran.rstudio.com/web/packages/binomen/index.html) - will be deprecated soon,
-being wrapped in to [taxa](https://cran.rstudio.com/web/packages/taxa/index.html).
 
 ## Manipulating/Parsing Taxonomic Names
 
@@ -121,8 +115,6 @@ lists:
 
   - [monographaR](https://cran.rstudio.com/web/packages/monographaR/index.html) functions to
     facilitate the production of plant taxonomic monographs
-  - [MonoPhy](https://cran.rstudio.com/web/packages/MonoPhy/index.html) Explore Monophyly (or Lack
-    of it) of Taxonomic Groups in a Phylogeny
   - [taxlist](https://cran.rstudio.com/web/packages/taxlist/index.html) has functions to import
     species lists from
     [Turboveg](https://www.synbiosys.alterra.nl/turboveg/) , a database
@@ -136,13 +128,10 @@ lists:
 
 ### CRAN packages:
 
-  - [binomen](https://cran.rstudio.com/web/packages/binomen/index.html)
   - [metacoder](https://cran.rstudio.com/web/packages/metacoder/index.html)
   - [microclass](https://cran.rstudio.com/web/packages/microclass/index.html)
   - [monographaR](https://cran.rstudio.com/web/packages/monographaR/index.html)
-  - [MonoPhy](https://cran.rstudio.com/web/packages/MonoPhy/index.html)
   - [ncbit](https://cran.rstudio.com/web/packages/ncbit/index.html)
-  - [Reol](https://cran.rstudio.com/web/packages/Reol/index.html)
   - [rgnparser](https://cran.rstudio.com/web/packages/rgnparser/index.html)
   - [ritis](https://cran.rstudio.com/web/packages/ritis/index.html)
   - [taxa](https://cran.rstudio.com/web/packages/taxa/index.html) (core)
