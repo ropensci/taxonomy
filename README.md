@@ -6,9 +6,9 @@ This article is about taxonomy in R.
 
 If you have any comments or suggestions for additions or improvements
 for this article [submit an
-issue](https://github.com/ropensci/taxonomy/issues), or make some
+issue](https://github.com/ropensci/taxonomy/issues) , or make some
 changes and [submit a pull
-request](https://github.com/ropensci/taxonomy/pulls). If you have an
+request](https://github.com/ropensci/taxonomy/pulls) . If you have an
 issue with one of the packages discussed below, please contact the
 maintainer of that package.
 
@@ -77,15 +77,15 @@ The following packages don’t fetch taxonomic dat as those in the above
 section, but are focused around providing tooling around taxonomic names
 and data.
 
-  - [pegax](https://github.com/ropenscilabs/pegax) is a C++ in R port of
-    [gnparser](https://github.com/GlobalNamesArchitecture/gnparser/)
-    from the GlobalNamesArchitecture project. It is still in
-    development.
+  - [rgnparser](https://cran.rstudio.com/web/packages/rgnparser/index.html) is a thin client for
+    the Go based library [gnparser](https://gitlab.com/gogna/gnparser)
+    from the GlobalNamesArchitecture project, which uses a Parsing
+    Expression Grammar (PEG) to parse taxonomic names very quickly.
   - [metacoder](https://cran.rstudio.com/web/packages/metacoder/index.html) specializes in
     metabarcoding. It can parse, manipulate, and visualize
     metabarcoding/taxonomic data. It leverages the
     [taxa](https://cran.rstudio.com/web/packages/taxa/index.html) package (
-    [GitHub](https://github.com/grunwaldlab/metacoder))
+    [GitHub](https://github.com/grunwaldlab/metacoder) )
   - [taxview](https://github.com/ropensci/taxview) is a in development
     package to help users summarize taxonomic data. Summarizing so far
     is taking form of getting taxonomic hierarchy data (via the
@@ -97,9 +97,8 @@ and data.
 There are a few packages that deal specifically with handling species
 lists:
 
-  - [defrostR](https://cran.rstudio.com/web/packages/defrostR/index.html) - amphibian taxonomy
-  - [splister](https://github.com/ropenscilabs/splister) - match species
-    list against a reference list. Still in development
+  - [splister](https://github.com/sckott/splister) - match species list
+    against a reference list. Still in development
 
 ## NCBI data
 
@@ -126,11 +125,11 @@ lists:
     of it) of Taxonomic Groups in a Phylogeny
   - [taxlist](https://cran.rstudio.com/web/packages/taxlist/index.html) has functions to import
     species lists from
-    [Turboveg](https://www.synbiosys.alterra.nl/turboveg/), a database
+    [Turboveg](https://www.synbiosys.alterra.nl/turboveg/) , a database
     management system for vegetation data
   - [vegdata](https://cran.rstudio.com/web/packages/vegdata/index.html) has functions to get
     taxonomic data from
-    [Turboveg](https://www.synbiosys.alterra.nl/turboveg/), and
+    [Turboveg](https://www.synbiosys.alterra.nl/turboveg/) , and
     [VegetWeb](https://www.vegetweb.de/) (German plant data)
 
 </div>
@@ -138,13 +137,13 @@ lists:
 ### CRAN packages:
 
   - [binomen](https://cran.rstudio.com/web/packages/binomen/index.html)
-  - [defrostR](https://cran.rstudio.com/web/packages/defrostR/index.html)
   - [metacoder](https://cran.rstudio.com/web/packages/metacoder/index.html)
   - [microclass](https://cran.rstudio.com/web/packages/microclass/index.html)
   - [monographaR](https://cran.rstudio.com/web/packages/monographaR/index.html)
   - [MonoPhy](https://cran.rstudio.com/web/packages/MonoPhy/index.html)
   - [ncbit](https://cran.rstudio.com/web/packages/ncbit/index.html)
   - [Reol](https://cran.rstudio.com/web/packages/Reol/index.html)
+  - [rgnparser](https://cran.rstudio.com/web/packages/rgnparser/index.html)
   - [ritis](https://cran.rstudio.com/web/packages/ritis/index.html)
   - [taxa](https://cran.rstudio.com/web/packages/taxa/index.html) (core)
   - [taxize](https://cran.rstudio.com/web/packages/taxize/index.html) (core)

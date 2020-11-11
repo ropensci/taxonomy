@@ -27,7 +27,7 @@ Manipulating/Parsing Taxonomic Names
 
 The following packages don't fetch taxonomic dat as those in the above section, but are focused around providing tooling around taxonomic names and data.
 
-- [pegax](https://github.com/ropenscilabs/pegax) is a C++ in R port of [gnparser](https://github.com/GlobalNamesArchitecture/gnparser/) from the GlobalNamesArchitecture project. It is still in development.
+- <pkg>rgnparser</pkg> is a thin client for the Go based library [gnparser](https://gitlab.com/gogna/gnparser) from the GlobalNamesArchitecture project, which uses a Parsing Expression Grammar (PEG) to parse taxonomic names very quickly.
 - <pkg>metacoder</pkg> specializes in metabarcoding. It can parse, manipulate, and visualize metabarcoding/taxonomic data. It leverages the <pkg>taxa</pkg> package ([GitHub](https://github.com/grunwaldlab/metacoder)) 
 - [taxview](https://github.com/ropensci/taxview) is a in development package to help users summarize taxonomic data. Summarizing so far is taking form of getting taxonomic hierarchy data (via the <pkg>taxize</pkg> package) to facilitate taxonomic summaries. Visualization isn't done yet.
 
@@ -37,8 +37,7 @@ Handling Taxonomic Name Lists
 
 There are a few packages that deal specifically with handling species lists:
 
-- <pkg>defrostR</pkg> - amphibian taxonomy
-- [splister](https://github.com/ropenscilabs/splister) - match species list against a reference list. Still in development
+- [splister](https://github.com/sckott/splister) - match species list against a reference list. Still in development
 
 
 NCBI data

@@ -2,7 +2,7 @@
   <name>Taxonomy</name>
   <topic>Taxonomy</topic>
   <maintainer email="myrmecocystus@gmail.com">Scott Chamberlain</maintainer>
-  <version>2018-01-19</version>
+  <version>2020-11-11</version>
   <info>
     <p>This article is about taxonomy in R.</p>
     <p>If you have any comments or suggestions for additions or improvements for this article <a href="https://github.com/ropensci/taxonomy/issues">submit an issue</a>, or make some changes and <a href="https://github.com/ropensci/taxonomy/pulls">submit a pull request</a>. If you have an issue with one of the packages discussed below, please contact the maintainer of that package.</p>
@@ -22,15 +22,14 @@
     <h2 id="manipulatingparsing-taxonomic-names">Manipulating/Parsing Taxonomic Names</h2>
     <p>The following packages don’t fetch taxonomic dat as those in the above section, but are focused around providing tooling around taxonomic names and data.</p>
     <ul>
-    <li><a href="https://github.com/ropenscilabs/pegax">pegax</a> is a C++ in R port of <a href="https://github.com/GlobalNamesArchitecture/gnparser/">gnparser</a> from the GlobalNamesArchitecture project. It is still in development.</li>
+    <li><pkg>rgnparser</pkg> is a thin client for the Go based library <a href="https://gitlab.com/gogna/gnparser">gnparser</a> from the GlobalNamesArchitecture project, which uses a Parsing Expression Grammar (PEG) to parse taxonomic names very quickly.</li>
     <li><pkg>metacoder</pkg> specializes in metabarcoding. It can parse, manipulate, and visualize metabarcoding/taxonomic data. It leverages the <pkg>taxa</pkg> package (<a href="https://github.com/grunwaldlab/metacoder">GitHub</a>)</li>
     <li><a href="https://github.com/ropensci/taxview">taxview</a> is a in development package to help users summarize taxonomic data. Summarizing so far is taking form of getting taxonomic hierarchy data (via the <pkg>taxize</pkg> package) to facilitate taxonomic summaries. Visualization isn’t done yet.</li>
     </ul>
     <h2 id="handling-taxonomic-name-lists">Handling Taxonomic Name Lists</h2>
     <p>There are a few packages that deal specifically with handling species lists:</p>
     <ul>
-    <li><pkg>defrostR</pkg> - amphibian taxonomy</li>
-    <li><a href="https://github.com/ropenscilabs/splister">splister</a> - match species list against a reference list. Still in development</li>
+    <li><a href="https://github.com/sckott/splister">splister</a> - match species list against a reference list. Still in development</li>
     </ul>
     <h2 id="ncbi-data">NCBI data</h2>
     <ul>
@@ -49,13 +48,13 @@
     <pkg priority="core">taxize</pkg>
     <pkg priority="core">taxa</pkg>
     <pkg>binomen</pkg>
-    <pkg>defrostR</pkg>
     <pkg>metacoder</pkg>
     <pkg>microclass</pkg>
     <pkg>monographaR</pkg>
     <pkg>MonoPhy</pkg>
     <pkg>ncbit</pkg>
     <pkg>Reol</pkg>
+    <pkg>rgnparser</pkg>
     <pkg>ritis</pkg>
     <pkg>taxizedb</pkg>
     <pkg>taxlist</pkg>
